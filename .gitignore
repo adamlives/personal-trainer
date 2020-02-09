@@ -5,6 +5,7 @@ __pycache__/
 
 # App specifics
 email_address_list.py
+account_details.py
 
 # C extensions
 *.so
