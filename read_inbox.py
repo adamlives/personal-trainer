@@ -47,7 +47,7 @@ def check_received_emails(name, email_address, token):
     _, data = mail.fetch(latest_email_id, "(RFC822)")
     msg = email.message_from_string(data[0][1].decode('utf-8'))
 
-    if token in msg['Subject'] and response in msg.get_payload()[0].get_payload().lower():
+    if token in msg.get_payload()[0].get_payload() and response in msg.get_payload()[0].get_payload().lower():
         print("Done for the day!")
         update_completed_users(name)
     else:
