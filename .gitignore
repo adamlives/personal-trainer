@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# App specifics
+email_address_list.py
+
 # C extensions
 *.so
 
